@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--HomepageItems);
+    box-shadow: 1px 2px 5px black;
+    
+}
+
+h1{
+    font-size: calc(var(--HomepageItems) * 1.5); 
+    font-weight: 800;
+}
+
+.toggler{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: var(--HomepageItems);
+    svg{
+        font-size: calc(var(--HomepageItems) + 4px);
+    }
+}
+
+.light{
+    background-color: var(--VeryLightGrayLightModeBackground);
+    color: var(--VeryDarkBlueLightModeText);
+}
+
+.dark{
+    background-color: var(--DarkBlueDarkModeElements);
+    color: var(--WhiteDarkModeTextLightModeElements);
+}
