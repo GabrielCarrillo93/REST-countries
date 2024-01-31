@@ -12,7 +12,8 @@ const Landing = ( {tema} ) => {
             <Filtros 
                 busqueda={setQuery}/>
             <Resultados 
-                busqueda={query}/>
+                busqueda={query}
+                />
         </main>
     )
 }

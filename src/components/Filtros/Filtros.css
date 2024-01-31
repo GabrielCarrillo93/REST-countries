@@ -21,6 +21,14 @@
     font-size: 20px;
 }
 
+.light .icono {
+    color: var(--DarkGrayLightModeInput);
+}
+
+.dark .icono{
+    color: var(--WhiteDarkModeTextLightModeElements);
+}
+
 input{
     padding: 8px 44px;
     width: 100%;
@@ -34,21 +42,111 @@ input:focus{
 }
 
 .light input {
-    outline: none;
     color: var(--DarkGrayLightModeInput);
 }
 
-.light .icono {
-    color: var(--DarkGrayLightModeInput);
+.dark input {
+    color: var(--WhiteDarkModeTextLightModeElements);
+    background-color: var(--DarkBlueDarkModeElements);
 }
 
 select{
     padding: 16px;
     font-size: var(--HomepageItems);
-    border: none;
+    border: 1px solid red;
     border-radius: 8px;
     width: 50%;
     border-right: 16px solid transparent;
+    position: relative;
+    z-index: 3;
+    
+}
+
+.light select{
+    color: var(--DarkGrayLightModeInput);
+}
+
+.dark select{
+    color: var(--WhiteDarkModeTextLightModeElements);
+    background-color: var(--DarkBlueDarkModeElements);
+}
+
+.select{
+    font-size: var(--HomepageItems);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    border-radius: 8px;
+}
+
+.selector{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 16px;
+}
+
+.dropdown{
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    z-index: 3;
+}
+
+.dropdown ul{
+    border-radius: 8px;
+    margin-top: 4px;
+    list-style: none;
+    padding: 14px 16px;   
+}
+
+.hide{
+    display: none;
+}
+
+.icondrop{
+    font-size: calc(var(--HomepageItems) + 6px);
+}
+
+.light .select{
+    color: var(--DarkGrayLightModeInput);
+    background-color: var(--VeryLightGrayLightModeBackground);
+}
+
+.light .dropdown ul{
+    background-color: var(--VeryLightGrayLightModeBackground);
+}
+
+.dark .select{
+    background-color: var(--DarkBlueDarkModeElements);
+    color: var(--WhiteDarkModeTextLightModeElements);
+}
+
+.dark .dropdown ul{
+    background-color: var(--DarkBlueDarkModeElements);
 }
 
 
+@media screen and (width > 375px) {
+    .filtro {
+        padding-inline: 5%;
+        padding-top: 36px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input{
+        width: 35%;
+    }
+
+    .select{
+        width: 15%;
+    }
+
+    li{
+        cursor: pointer;
+    }
+}
