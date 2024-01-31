@@ -40,4 +40,8 @@ header.dark{
     header{
         padding-inline: 5%;
     }
+
+    .toggler{
+        cursor: pointer;
+    }
 }
