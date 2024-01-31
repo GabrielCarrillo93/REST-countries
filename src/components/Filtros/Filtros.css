@@ -1,0 +1,54 @@
+.filtro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: var(--HomepageItems);
+    position: relative;
+}
+
+.dark .filtro{
+    background-color: var(--VeryDarkBlueDarkModeBackground);
+}
+
+.light .filtro{
+    background-color: var(--VeryLightGrayLightModeBackground);
+}
+
+.icono{
+    position: absolute;
+    margin: 15px;
+    font-size: 20px;
+}
+
+input{
+    padding: 8px 44px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    font-size: var(--HomepageItems);
+}
+
+input:focus{
+    outline: none;
+}
+
+.light input {
+    outline: none;
+    color: var(--DarkGrayLightModeInput);
+}
+
+.light .icono {
+    color: var(--DarkGrayLightModeInput);
+}
+
+select{
+    padding: 16px;
+    font-size: var(--HomepageItems);
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    border-right: 16px solid transparent;
+}
+
+

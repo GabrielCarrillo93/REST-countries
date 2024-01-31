@@ -4,8 +4,8 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: var(--HomepageItems);
-    box-shadow: 1px 2px 5px black;
-    
+    position: relative;
+    z-index: 3;
 }
 
 h1{
@@ -24,12 +24,20 @@ h1{
     }
 }
 
-.light{
+header.light{
     background-color: var(--VeryLightGrayLightModeBackground);
     color: var(--VeryDarkBlueLightModeText);
+    box-shadow: 1px 1px 5px var(--DarkGrayLightModeInput);
 }
 
-.dark{
+header.dark{
     background-color: var(--DarkBlueDarkModeElements);
     color: var(--WhiteDarkModeTextLightModeElements);
+    box-shadow: 1px 1px 5px var(--VeryDarkBlueLightModeText);
+}
+
+@media screen and (width > 375px) {
+    header{
+        padding-inline: 5%;
+    }
 }

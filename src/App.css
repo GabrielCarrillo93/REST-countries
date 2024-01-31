@@ -18,3 +18,10 @@
     --DetailPage: 16px;
 }
 
+main.light{
+    background-color: var(--VeryLightGrayLightModeBackground);
+}
+
+main.dark{
+    background-color: var(--VeryDarkBlueDarkModeBackground);
+}
