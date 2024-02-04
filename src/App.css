@@ -18,10 +18,12 @@
     --DetailPage: 16px;
 }
 
-main.light{
+.light main{
     background-color: var(--VeryLightGrayLightModeBackground);
+    color: var(--VeryDarkBlueLightModeText);
 }
 
-main.dark{
+.dark main{
     background-color: var(--VeryDarkBlueDarkModeBackground);
+    color: var(--WhiteDarkModeTextLightModeElements);
 }

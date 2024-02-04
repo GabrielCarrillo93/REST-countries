@@ -4,11 +4,11 @@ import Resultados from '../components/Resultados/Resultados'
 import '../App.css'
 
 // eslint-disable-next-line react/prop-types
-const Landing = ( {tema} ) => {
+const Landing = () => {
     const [query, setQuery] = useState("")
 
     return (
-        <main className={tema}>
+        <main>
             <Filtros 
                 busqueda={setQuery}/>
             <Resultados 

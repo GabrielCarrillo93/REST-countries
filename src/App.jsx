@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Landing from './pages/Landing'
+import Detalles from './pages/Detalles'
 
 function App() {
     const [theme, setTheme] = useState("light")
@@ -12,9 +13,9 @@ function App() {
 
     useEffect(() => {
         if (theme === "light"){
-            body[0].style.backgroundColor = "hsl(0, 0%, 100%)"
+            body[0].className = theme
         } else if(theme === "dark"){
-            body[0].style.backgroundColor = "hsl(207, 26%, 17%)"
+            body[0].className = theme
         }
     }, [theme])
 
@@ -24,8 +25,7 @@ function App() {
             tema={theme} 
             selector={setTheme}
             />
-        <Landing 
-            tema={theme}/>
+        <Detalles />
         <Footer
             tema={theme}
             />
