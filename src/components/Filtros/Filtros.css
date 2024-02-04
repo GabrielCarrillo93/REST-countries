@@ -15,9 +15,15 @@
     background-color: var(--VeryLightGrayLightModeBackground);
 }
 
+.search{
+    display: flex;
+    align-items: center;
+}
+
 .icono{
     position: absolute;
-    margin: 15px;
+    z-index: 3;
+    margin-left: 16px;
     font-size: 20px;
 }
 
@@ -30,7 +36,7 @@
 }
 
 input{
-    padding: 8px 44px;
+    padding: 16px 44px;
     width: 100%;
     border-radius: 8px;
     border: none;
@@ -86,7 +92,7 @@ select{
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 10px 16px;
+    padding: 16px;
 }
 
 .dropdown{
@@ -101,6 +107,10 @@ select{
     margin-top: 4px;
     list-style: none;
     padding: 14px 16px;   
+}
+
+li {
+    line-height: 24px;
 }
 
 .hide{
@@ -138,12 +148,19 @@ select{
         justify-content: space-between;
     }
 
-    input{
+    .search{
         width: 35%;
     }
-
+    
     .select{
         width: 15%;
+    }
+
+    .dropdown ul{
+        border-radius: 8px;
+        margin-top: 16px;
+        list-style: none;
+        padding: 16px;
     }
 
     li{

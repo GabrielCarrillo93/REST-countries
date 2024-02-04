@@ -24,14 +24,16 @@ const Filtros = ({busqueda}) => {
     return (
         <section
             className='filtro'>
-            <Icon 
-                icon="material-symbols:search"
-                className='icono'/>
-            <input
-                type="text"
-                placeholder="Search for a country..."
-                onChange={handleInputQuery}
-                />
+            <div className="search">
+                <Icon
+                    icon="material-symbols:search"
+                    className='icono'/>
+                <input
+                    type="text"
+                    placeholder="Search for a country..."
+                    onChange={handleInputQuery}
+                    />
+            </div>
             <div 
                 className='select'
                 onClick={handleDropdown}>
