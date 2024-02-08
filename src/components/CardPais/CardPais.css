@@ -1,0 +1,32 @@
+article{
+    width: 100%;
+    border-radius: 4px
+}
+
+.light article{
+    background-color: var(--WhiteDarkModeTextLightModeElements);
+    color: var(--VeryDarkBlueLightModeText);
+}
+
+.dark article{
+    background-color: var(--DarkBlueDarkModeElements);
+    color: var(--WhiteDarkModeTextLightModeElements);
+}
+
+article img{
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: block;
+}
+
+.info{
+    padding-top: calc(var(--HomepageItems) * 1.5 );
+    padding-inline: var(--HomepageItems);
+    padding-bottom: calc(var(--HomepageItems) * 2);
+}
+
+p{
+    font-size: var(--HomepageItems);
+    line-height: 28px;
+}

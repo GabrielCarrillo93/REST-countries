@@ -1,0 +1,16 @@
+button{
+    padding: calc(var(--DetailPage) / 2) var(--DetailPage);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dark button{
+    background-color: var(--DarkBlueDarkModeElements);
+    color: var(--WhiteDarkModeTextLightModeElements);
+}
+
+.light button{
+    background-color: var(--WhiteDarkModeTextLightModeElements);
+}
+
